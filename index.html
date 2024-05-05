@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./image/clear.png" type="image/x-icon">
+</head>
+<body>
+    <div class="card">
+    <div class="search">
+            <input type="text" placeholder="Enter city name" spellcheck="false">
+            <button><img src="image/search.png" alt="search Icon"></button>
+        </div>
+    </div>
+        <div class="error">
+            <p>Invalid City Name.</p>
+        </div>
+        
+        <div class="card2">
+            <h3>Embrace the storm, find beauty in chaos.</h3>
+        <div class="weather">
+            <img src="image/rain.png" alt="weather icon" class="weather-icon">
+            <h1 class="temp">31°C</h1>
+            <h2 class="city">New York</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="image/humidity.png" >
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="image/wind.png" >
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sunrise-sunset">
+                <p class="sunrise">Sunrise: 6:00 AM</p>
+                <p class="sunset">Sunset: 6:00 PM</p>
+            </div>
+<p class="activity"></p>
+            <div class="forecast">
+                <h3>Hourly Forecast</h3>
+                <div class="forecast-details">
+                    <!-- Forecast details will be displayed here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+ <div id="alertModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="alertMessage"></p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
